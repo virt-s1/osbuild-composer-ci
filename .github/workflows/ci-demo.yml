@@ -5,8 +5,38 @@ on:
   workflow_dispatch:
 
 jobs:
-  ci-runner-demo:
-    runs-on: [kite, x86_64, rhos-01, rhel-9-2, large]
+  # ci-runner-gcp-cs9:
+  #   runs-on: [kite, x86_64, gcp, centos-stream-9, large]
+  #   steps:
+  #     - name: Show all environment variables
+  #       run: printenv
+
+  # ci-runner-gcp-cs8:
+  #   runs-on: [kite, x86_64, gcp, centos-stream-8, large]
+  #   steps:
+  #     - name: Show all environment variables
+  #       run: printenv
+
+  # ci-runner-gcp-f37:
+  #   runs-on: [kite, x86_64, gcp, fedora-37, large]
+  #   steps:
+  #     - name: Show all environment variables
+  #       run: printenv
+
+  # ci-runner-gcp-f38:
+  #   runs-on: [kite, x86_64, gcp, fedora-38, large]
+  #   steps:
+  #     - name: Show all environment variables
+  #       run: printenv
+
+  # ci-runner-rhos-d-rhel92:
+  #   runs-on: [kite, x86_64, rhos-d, rhel-9-2, large]
+  #   steps:
+  #     - name: Show all environment variables
+  #       run: printenv
+
+  runner-beaker-arm:
+    runs-on: [kite, aarch64, beaker, fedora-37]
     steps:
       - name: Show all environment variables
         run: printenv
